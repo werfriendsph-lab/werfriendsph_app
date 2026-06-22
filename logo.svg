@@ -1,0 +1,41 @@
+<svg width="512" height="512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="wGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0EA5A5"/>
+      <stop offset="100%" stop-color="#1565C0"/>
+    </linearGradient>
+    <linearGradient id="bubbleGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#22D3D3"/>
+      <stop offset="100%" stop-color="#1565C0"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="512" height="512" rx="96" fill="#0B1220"/>
+
+  <!-- Chat bubble tail, positioned as accent behind the W -->
+  <path d="M 326 318 Q 326 344 300 344 L 270 344 L 286 372 L 286 344"
+        fill="none" stroke="url(#bubbleGradient)" stroke-width="0" />
+
+  <!-- Speech bubble shape (right side, forms the dot/accent of the mark) -->
+  <g>
+    <rect x="296" y="158" width="118" height="92" rx="28" fill="url(#bubbleGradient)"/>
+    <path d="M 322 250 L 322 282 L 354 250 Z" fill="url(#bubbleGradient)"/>
+    <!-- Three dots inside bubble suggesting "chat" -->
+    <circle cx="328" cy="204" r="7" fill="#0B1220"/>
+    <circle cx="355" cy="204" r="7" fill="#0B1220"/>
+    <circle cx="382" cy="204" r="7" fill="#0B1220"/>
+  </g>
+
+  <!-- Letter W, bold geometric, monoline -->
+  <g fill="none" stroke="url(#wGradient)" stroke-width="34" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M 108 196
+             L 158 372
+             L 208 244
+             L 248 372
+             L 298 196"/>
+  </g>
+
+  <!-- Small accent dot under the W tail, echoing the bubble dots -->
+  <circle cx="298" cy="392" r="10" fill="#22D3D3"/>
+</svg>

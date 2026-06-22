@@ -1,0 +1,15 @@
+{
+  "name": "were-friends",
+  "version": "1.0.0",
+  "description": "We're Friends - social app",
+  "scripts": {
+    "build": "echo 'no build step needed, static html'"
+  },
+  "dependencies": {
+    "@capacitor/core": "^6.1.2",
+    "@capacitor/android": "^6.1.2"
+  },
+  "devDependencies": {
+    "@capacitor/cli": "^6.1.2"
+  }
+}
